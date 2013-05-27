@@ -5,7 +5,9 @@ using System.Transactions;
 using System.Web.Mvc;
 using System.Web.Security;
 using BuildHealth2013.WebUI.Filters;
+using BuildHealth2013.WebUI.Infrastructure.DataAccess;
 using BuildHealth2013.WebUI.Models;
+using BuildHealth2013.WebUI.ViewModels;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
@@ -262,7 +264,7 @@ namespace BuildHealth2013.WebUI.Controllers
             if (ModelState.IsValid)
             {
                 // Insert a new user into the database
-                using (UsersContext db = new UsersContext())
+                using (BuildHealthContext db = new BuildHealthContext())
                 {
                     UserProfile user = db.UserProfiles.FirstOrDefault(u => u.UserName.ToLower() == model.UserName.ToLower());
                     // Check if user already exists

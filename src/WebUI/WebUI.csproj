@@ -42,6 +42,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="StructureMap">
+      <HintPath>..\..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -189,8 +192,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Infrastructure\DataAccess\BuildHealthContext.cs" />
+    <Compile Include="Infrastructure\DataAccess\BuildHealthContextInitilizer.cs" />
+    <Compile Include="Infrastructure\DataAccess\Configurations\UserProfileConfiguration.cs" />
+    <Compile Include="Infrastructure\DataAccess\DbContextInitializer.cs" />
+    <Compile Include="Infrastructure\DataAccess\IDbContext.cs" />
+    <Compile Include="ViewModels\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\UserProfile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -306,6 +315,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Infrastructure\IoC\" />
+    <Folder Include="Infrastructure\Mapping\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

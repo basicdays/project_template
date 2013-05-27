@@ -3,7 +3,7 @@ using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Threading;
 using System.Web.Mvc;
-using BuildHealth2013.WebUI.Models;
+using BuildHealth2013.WebUI.Infrastructure.DataAccess;
 using WebMatrix.WebData;
 
 namespace BuildHealth2013.WebUI.Filters
@@ -25,11 +25,11 @@ namespace BuildHealth2013.WebUI.Filters
         {
             public SimpleMembershipInitializer()
             {
-                Database.SetInitializer<UsersContext>(null);
+                Database.SetInitializer<BuildHealthContext>(null);
 
                 try
                 {
-                    using (var context = new UsersContext())
+                    using (var context = new BuildHealthContext())
                     {
                         if (!context.Database.Exists())
                         {
