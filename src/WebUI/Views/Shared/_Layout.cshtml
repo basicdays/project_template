@@ -7,6 +7,19 @@
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/bundles/styles/vendor")
         @Styles.Render("~/bundles/styles/app")
+        <script>
+            var health;
+            (function() {
+                'use strict';
+                health = health || {};
+                health.env = health.env || {};
+
+                health.env = {
+                    rootUrl: @Html.Raw(JsonConvert.SerializeObject(Url.Content("~/"))),
+                    locale: @Html.Raw(JsonConvert.SerializeObject(CultureInfo.CurrentCulture))
+                };
+            }());
+        </script>
         @Scripts.Render("~/bundles/scripts/modernizr")
     </head>
     <body>

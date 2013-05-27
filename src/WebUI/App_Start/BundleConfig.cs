@@ -10,7 +10,8 @@ namespace BuildHealth2013.WebUI.App_Start
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/scripts/modernizr").Include(
-                "~/Scripts/modernizr-*"
+                "~/Scripts/modernizr*",
+                "~/Scripts/polyfills/browserTests.js"
             ));
 
             // Can comment parts that are not in use
