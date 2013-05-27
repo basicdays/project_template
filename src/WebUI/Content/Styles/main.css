@@ -1,0 +1,878 @@
+@charset "UTF-8";
+/* line 1, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+html {
+  background-color: #e2e2e2;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+body {
+  background-color: #fff;
+  border-top: solid 10px #000;
+  color: #333;
+  font-size: .85em;
+  font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 17, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+a {
+  color: #333;
+  outline: none;
+  padding-left: 3px;
+  padding-right: 3px;
+  text-decoration: underline;
+}
+
+/* line 26, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+a:link, a:visited,
+a:active, a:hover {
+  color: #333;
+}
+
+/* line 30, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+a:hover {
+  background-color: #c7d1d6;
+}
+
+/* line 35, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+header, footer, hgroup,
+nav, section {
+  display: block;
+}
+
+/* line 39, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+mark {
+  background-color: #a6dbed;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 45, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.float-left {
+  float: left;
+}
+
+/* line 49, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.float-right {
+  float: right;
+}
+
+/* line 53, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.clear-fix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* line 62, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+h1, h2, h3,
+h4, h5, h6 {
+  color: #000;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* line 68, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 72, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+h2 {
+  font-size: 1.75em;
+}
+
+/* line 76, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+h3 {
+  font-size: 1.2em;
+}
+
+/* line 80, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+h4 {
+  font-size: 1.1em;
+}
+
+/* line 84, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+h5, h6 {
+  font-size: 1em;
+}
+
+/* line 88, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+h5 a:link, h5 a:visited, h5 a:active {
+  padding: 0;
+  text-decoration: none;
+}
+
+/* main layout
+----------------------------------------------------------*/
+/* line 96, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/* line 101, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#body {
+  background-color: #efeeef;
+  clear: both;
+  padding-bottom: 35px;
+}
+
+/* line 107, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.main-content {
+  background: url('/Content/Images/accent.png?1369609751') no-repeat;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+
+/* line 113, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.featured + .main-content {
+  background: url('/Content/Images/heroAccent.png?1369609751') no-repeat;
+}
+
+/* line 117, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+header .content-wrapper {
+  padding-top: 20px;
+}
+
+/* line 121, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+footer {
+  clear: both;
+  background-color: #e2e2e2;
+  font-size: .8em;
+  height: 100px;
+}
+
+/* site title
+----------------------------------------------------------*/
+/* line 131, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.site-title {
+  color: #c8c8c8;
+  font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+  font-size: 2.3em;
+  margin: 0;
+}
+
+/* line 138, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.site-title a, .site-title a:hover, .site-title a:active {
+  background: none;
+  color: #c8c8c8;
+  outline: none;
+  text-decoration: none;
+}
+
+/* login
+----------------------------------------------------------*/
+/* line 148, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#login {
+  display: block;
+  font-size: .85em;
+  margin: 0 0 10px;
+  text-align: right;
+}
+
+/* line 155, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#login a {
+  background-color: #d3dce0;
+  margin-left: 10px;
+  margin-right: 3px;
+  padding: 2px 3px;
+  text-decoration: none;
+}
+
+/* line 163, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#login a.username {
+  background: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+/* line 170, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#login ul {
+  margin: 0;
+}
+
+/* line 174, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#login li {
+  display: inline;
+  list-style: none;
+}
+
+/* menu
+----------------------------------------------------------*/
+/* line 182, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ul#menu {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 0 0 5px;
+  padding: 0;
+  text-align: right;
+}
+
+/* line 190, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ul#menu li {
+  display: inline;
+  list-style: none;
+  padding-left: 15px;
+}
+
+/* line 196, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ul#menu li a {
+  background: none;
+  color: #999;
+  text-decoration: none;
+}
+
+/* line 202, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ul#menu li a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+/* page elements
+----------------------------------------------------------*/
+/* featured */
+/* line 211, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.featured {
+  background-color: #fff;
+}
+
+/* line 215, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.featured .content-wrapper {
+  background-color: #7ac0da;
+  background-image: -ms-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
+  background-image: -o-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7ac0da), color-stop(1, #a4d4e6));
+  background-image: -webkit-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
+  background-image: linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
+  color: #3e5667;
+  padding: 20px 40px 30px 40px;
+}
+
+/* line 226, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.featured hgroup.title h1, .featured hgroup.title h2 {
+  color: #fff;
+}
+
+/* line 230, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.featured p {
+  font-size: 1.1em;
+}
+
+/* page titles */
+/* line 235, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+hgroup.title {
+  margin-bottom: 10px;
+}
+
+/* line 239, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+hgroup.title h1, hgroup.title h2 {
+  display: inline;
+}
+
+/* line 243, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+hgroup.title h2 {
+  font-weight: normal;
+  margin-left: 3px;
+}
+
+/* features */
+/* line 249, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+section.feature {
+  width: 300px;
+  float: left;
+  padding: 10px;
+}
+
+/* ordered list */
+/* line 256, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ol.round {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* line 261, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ol.round li {
+  margin: 25px 0;
+  padding-left: 45px;
+}
+
+/* line 266, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ol.round li.zero {
+  background: url('/Content/Images/orderedList0.png?1369609751') no-repeat;
+}
+
+/* line 270, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ol.round li.one {
+  background: url('/Content/Images/orderedList1.png?1369609751') no-repeat;
+}
+
+/* line 274, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ol.round li.two {
+  background: url('/Content/Images/orderedList2.png?1369609751') no-repeat;
+}
+
+/* line 278, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ol.round li.three {
+  background: url('/Content/Images/orderedList3.png?1369609751') no-repeat;
+}
+
+/* line 282, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ol.round li.four {
+  background: url('/Content/Images/orderedList4.png?1369609751') no-repeat;
+}
+
+/* line 286, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ol.round li.five {
+  background: url('/Content/Images/orderedList5.png?1369609751') no-repeat;
+}
+
+/* line 290, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ol.round li.six {
+  background: url('/Content/Images/orderedList6.png?1369609751') no-repeat;
+}
+
+/* line 294, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ol.round li.seven {
+  background: url('/Content/Images/orderedList7.png?1369609751') no-repeat;
+}
+
+/* line 298, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ol.round li.eight {
+  background: url('/Content/Images/orderedList8.png?1369609751') no-repeat;
+}
+
+/* line 302, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+ol.round li.nine {
+  background: url('/Content/Images/orderedList9.png?1369609751') no-repeat;
+}
+
+/* content */
+/* line 307, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+article {
+  float: left;
+  width: 70%;
+}
+
+/* line 312, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+aside {
+  float: right;
+  width: 25%;
+}
+
+/* line 317, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 322, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+aside ul li {
+  background: url('/Content/Images/bullet.png?1369609751') no-repeat 0 50%;
+  padding: 2px 0 2px 20px;
+}
+
+/* line 327, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.label {
+  font-weight: 700;
+}
+
+/* login page */
+/* line 332, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#loginForm {
+  border-right: solid 2px #c8c8c8;
+  float: left;
+  width: 55%;
+}
+
+/* line 338, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#loginForm .validation-error {
+  display: block;
+  margin-left: 15px;
+}
+
+/* line 343, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#loginForm .validation-summary-errors ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 348, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#loginForm .validation-summary-errors li {
+  display: inline;
+  list-style: none;
+  margin: 0;
+}
+
+/* line 354, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#loginForm input {
+  width: 250px;
+}
+
+/* line 361, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#loginForm input[type="checkbox"],
+#loginForm input[type="submit"],
+#loginForm input[type="button"],
+#loginForm button {
+  width: auto;
+}
+
+/* line 365, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#socialLoginForm {
+  margin-left: 40px;
+  float: left;
+  width: 40%;
+}
+
+/* line 371, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#socialLoginForm h2 {
+  margin-bottom: 5px;
+}
+
+/* line 375, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#socialLoginList button {
+  margin-bottom: 12px;
+}
+
+/* line 379, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+#logoutForm {
+  display: inline;
+}
+
+/* contact */
+/* line 384, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.contact h3 {
+  font-size: 1.2em;
+}
+
+/* line 388, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.contact p {
+  margin: 5px 0 0 10px;
+}
+
+/* line 392, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.contact iframe {
+  border: 1px solid #333;
+  margin: 5px 0 0 10px;
+}
+
+/* forms */
+/* line 398, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 404, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+fieldset legend {
+  display: none;
+}
+
+/* line 408, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+fieldset ol {
+  padding: 0;
+  list-style: none;
+}
+
+/* line 413, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+fieldset ol li {
+  padding-bottom: 5px;
+}
+
+/* line 417, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+label {
+  display: block;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/* line 423, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+label.checkbox {
+  display: inline;
+}
+
+/* line 427, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+input, textarea {
+  border: 1px solid #e2e2e2;
+  background: #fff;
+  color: #333;
+  font-size: 1.2em;
+  margin: 5px 0 6px 0;
+  padding: 5px;
+  width: 300px;
+}
+
+/* line 437, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+textarea {
+  font-family: inherit;
+  width: 500px;
+}
+
+/* line 442, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+input:focus, textarea:focus {
+  border: 1px solid #7ac0da;
+}
+
+/* line 446, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+input[type="checkbox"] {
+  background: transparent;
+  border: inherit;
+  width: auto;
+}
+
+/* line 454, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+input[type="submit"],
+input[type="button"],
+button {
+  background-color: #d3dce0;
+  border: 1px solid #787878;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 7px;
+  margin-right: 8px;
+  width: auto;
+}
+
+/* line 467, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+td input[type="submit"],
+td input[type="button"],
+td button {
+  font-size: 1em;
+  padding: 4px;
+  margin-right: 4px;
+}
+
+/* info and errors */
+/* line 474, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.message-info {
+  border: 1px solid;
+  clear: both;
+  padding: 10px 20px;
+}
+
+/* line 480, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.message-error {
+  clear: both;
+  color: #e80c4d;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+}
+
+/* line 488, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.message-success {
+  color: #7ac0da;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+}
+
+/* line 495, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.error {
+  color: #e80c4d;
+}
+
+/* styles for validation helpers */
+/* line 500, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.field-validation-error {
+  color: #e80c4d;
+  font-weight: bold;
+}
+
+/* line 505, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.field-validation-valid {
+  display: none;
+}
+
+/* line 509, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+input.input-validation-error {
+  border: 1px solid #e80c4d;
+}
+
+/* line 513, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+input[type="checkbox"].input-validation-error {
+  border: 0 none;
+}
+
+/* line 517, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.validation-summary-errors {
+  color: #e80c4d;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* line 523, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+.validation-summary-valid {
+  display: none;
+}
+
+/* tables
+----------------------------------------------------------*/
+/* line 530, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 0.75em;
+  border: 0 none;
+}
+
+/* line 537, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+th {
+  font-size: 1.2em;
+  text-align: left;
+  border: none 0px;
+  padding-left: 0;
+}
+
+/* line 544, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+th a {
+  display: block;
+  position: relative;
+}
+
+/* line 549, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+th a:link, th a:visited, th a:active, th a:hover {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0;
+}
+
+/* line 556, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+th a:hover {
+  color: #000;
+}
+
+/* line 560, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+th.asc a, th.desc a {
+  margin-right: .75em;
+}
+
+/* line 564, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+th.asc a:after, th.desc a:after {
+  display: block;
+  position: absolute;
+  right: 0em;
+  top: 0;
+  font-size: 0.75em;
+}
+
+/* line 572, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+th.asc a:after {
+  content: '▲';
+}
+
+/* line 576, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+th.desc a:after {
+  content: '▼';
+}
+
+/* line 580, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+td {
+  padding: 0.25em 2em 0.25em 0em;
+  border: 0 none;
+}
+
+/* line 585, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+tr.pager td {
+  padding: 0 0.25em 0 0;
+}
+
+/********************
+*   Mobile Styles   *
+********************/
+@media only screen and (max-width: 850px) {
+  /* header
+  ----------------------------------------------------------*/
+  /* line 598, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  header .float-left,
+  header .float-right {
+    float: none;
+  }
+
+  /* logo */
+  /* line 603, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  header .site-title {
+    margin: 10px;
+    text-align: center;
+  }
+
+  /* login */
+  /* line 609, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  #login {
+    font-size: .85em;
+    margin: 0 0 12px;
+    text-align: center;
+  }
+
+  /* line 615, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  #login ul {
+    margin: 5px 0;
+    padding: 0;
+  }
+
+  /* line 620, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  #login li {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 627, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  #login a {
+    background: none;
+    color: #999;
+    font-weight: 600;
+    margin: 2px;
+    padding: 0;
+  }
+
+  /* line 635, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  #login a:hover {
+    color: #333;
+  }
+
+  /* menu */
+  /* line 640, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  nav {
+    margin-bottom: 5px;
+  }
+
+  /* line 644, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  ul#menu {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* line 650, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  ul#menu li {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* main layout
+  ----------------------------------------------------------*/
+  /* line 659, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  .main-content,
+  .featured + .main-content {
+    background-position: 10px 0;
+  }
+
+  /* line 663, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  .content-wrapper {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  /* line 668, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  .featured .content-wrapper {
+    padding: 10px;
+  }
+
+  /* page content */
+  /* line 673, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  article, aside {
+    float: none;
+    width: 100%;
+  }
+
+  /* ordered list */
+  /* line 679, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  ol.round {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  /* line 684, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  ol.round li {
+    padding-left: 10px;
+    margin: 25px 0;
+  }
+
+  /* line 698, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  ol.round li.zero,
+  ol.round li.one,
+  ol.round li.two,
+  ol.round li.three,
+  ol.round li.four,
+  ol.round li.five,
+  ol.round li.six,
+  ol.round li.seven,
+  ol.round li.eight,
+  ol.round li.nine {
+    background: none;
+  }
+
+  /* features */
+  /* line 703, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  section.feature {
+    float: none;
+    padding: 10px;
+    width: auto;
+  }
+
+  /* line 709, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  section.feature img {
+    color: #999;
+    content: attr(alt);
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  /* forms */
+  /* line 717, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  input {
+    width: 90%;
+  }
+
+  /* login page */
+  /* line 722, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  #loginForm {
+    border-right: none;
+    float: none;
+    width: auto;
+  }
+
+  /* line 728, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  #loginForm .validation-error {
+    display: block;
+    margin-left: 15px;
+  }
+
+  /* line 733, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  #socialLoginForm {
+    margin-left: 0;
+    float: none;
+    width: auto;
+  }
+
+  /* footer
+  ----------------------------------------------------------*/
+  /* line 743, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  footer .float-left,
+  footer .float-right {
+    float: none;
+  }
+
+  /* line 747, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  footer {
+    text-align: center;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  /* line 753, C:/Users/Paul/wip/buildhealth2013/src/WebUI/Content/Sass/Components/_default.scss */
+  footer p {
+    margin: 0;
+  }
+}

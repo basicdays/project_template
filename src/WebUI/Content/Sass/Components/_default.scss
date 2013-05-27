@@ -105,13 +105,13 @@ h5, h6 {
 }
 
     .main-content {
-        background: url("../Content/Images/accent.png") no-repeat;
+        background: image-url("accent.png") no-repeat;
         padding-left: 10px;
         padding-top: 30px;
     }
 
     .featured + .main-content {
-        background: url("../Content/Images/heroAccent.png") no-repeat;
+        background: image-url("heroAccent.png") no-repeat;
     }
 
 header .content-wrapper {
@@ -264,43 +264,43 @@ ol.round {
     }
 
         ol.round li.zero {
-            background: url("../Content/Images/orderedList0.png") no-repeat;
+            background: image-url("orderedList0.png") no-repeat;
         }
 
         ol.round li.one {
-            background: url("../Content/Images/orderedList1.png") no-repeat;
+            background: image-url("orderedList1.png") no-repeat;
         }
 
         ol.round li.two {
-            background: url("../Content/Images/orderedList2.png") no-repeat;
+            background: image-url("orderedList2.png") no-repeat;
         }
 
         ol.round li.three {
-            background: url("../Content/Images/orderedList3.png") no-repeat;
+            background: image-url("orderedList3.png") no-repeat;
         }
 
         ol.round li.four {
-            background: url("../Content/Images/orderedList4.png") no-repeat;
+            background: image-url("orderedList4.png") no-repeat;
         }
 
         ol.round li.five {
-            background: url("../Content/Images/orderedList5.png") no-repeat;
+            background: image-url("orderedList5.png") no-repeat;
         }
 
         ol.round li.six {
-            background: url("../Content/Images/orderedList6.png") no-repeat;
+            background: image-url("orderedList6.png") no-repeat;
         }
 
         ol.round li.seven {
-            background: url("../Content/Images/orderedList7.png") no-repeat;
+            background: image-url("orderedList7.png") no-repeat;
         }
 
         ol.round li.eight {
-            background: url("../Content/Images/orderedList8.png") no-repeat;
+            background: image-url("orderedList8.png") no-repeat;
         }
 
         ol.round li.nine {
-            background: url("../Content/Images/orderedList9.png") no-repeat;
+            background: image-url("orderedList9.png") no-repeat;
         }
 
 /* content */
@@ -320,7 +320,7 @@ aside {
     }
 
         aside ul li {
-            background: url("../Content/Images/bullet.png") no-repeat 0 50%;
+            background: image-url("bullet.png") no-repeat 0 50%;
             padding: 2px 0 2px 20px;
         }
 

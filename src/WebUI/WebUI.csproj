@@ -202,6 +202,7 @@
     <Compile Include="Models\UserProfile.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Styles\main.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -258,6 +259,11 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Content\Sass\main.scss" />
+    <Content Include="Content\Sass\Components\_base.scss" />
+    <Content Include="Content\Sass\Components\_susy_settings.scss" />
+    <Content Include="Content\Sass\Components\_default.scss" />
+    <Content Include="Content\Sass\Components\_bootstrap_config.scss" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -280,7 +286,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Content\Images\accent.png" />
     <Content Include="Content\Images\bullet.png" />
@@ -316,6 +321,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Infrastructure\IoC\" />
+    <Folder Include="Content\Fonts\" />
     <Folder Include="Infrastructure\Mapping\" />
     <Folder Include="Services\" />
   </ItemGroup>
