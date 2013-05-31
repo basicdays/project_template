@@ -1,8 +1,8 @@
-﻿using System.Web.Http;
-using System.Web.Mvc;
-using System.Web.Optimization;
-using System.Web.Routing;
-using BuildHealth2013.WebUI.App_Start;
+﻿using System.Reflection;
+using BuildHealth2013.WebUI.Infrastructure.StructureMap;
+using BuildHealth2013.WebUI.Infrastructure.StructureMap.Bootstrap;
+using StructureMap;
+using log4net;
 
 namespace BuildHealth2013.WebUI
 {
@@ -11,15 +11,24 @@ namespace BuildHealth2013.WebUI
 
     public class MvcApplication : System.Web.HttpApplication
     {
+        private Bootstrap _bootstrapper;
+
         protected void Application_Start()
         {
-            AreaRegistration.RegisterAllAreas();
+            //start log4net
+            var logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
-            WebApiConfig.Register(GlobalConfiguration.Configuration);
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
-            AuthConfig.RegisterAuth();
+            _bootstrapper =
+                new Bootstrap()
+                    .WithContainer(ObjectFactory.Container)
+                    .WithRegistrar(new StructuremapRegistrar())
+                    .WithLogger(logger)
+                    .Start();
+        }
+
+        protected void Application_End()
+        {
+            _bootstrapper.Dispose();
         }
     }
 }

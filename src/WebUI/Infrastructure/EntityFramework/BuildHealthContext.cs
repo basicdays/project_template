@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
-using BuildHealth2013.WebUI.Infrastructure.DataAccess.Configurations;
+﻿using System.Data.Entity;
+using BuildHealth2013.WebUI.Infrastructure.EntityFramework.Configurations;
 using BuildHealth2013.WebUI.Models;
 
-namespace BuildHealth2013.WebUI.Infrastructure.DataAccess
+namespace BuildHealth2013.WebUI.Infrastructure.EntityFramework
 {
     public class BuildHealthContext : DbContext, IDbContext
     {

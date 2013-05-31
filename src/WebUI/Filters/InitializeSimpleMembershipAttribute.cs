@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Threading;
 using System.Web.Mvc;
-using BuildHealth2013.WebUI.Infrastructure.DataAccess;
+using BuildHealth2013.WebUI.Infrastructure.EntityFramework;
 using WebMatrix.WebData;
 
 namespace BuildHealth2013.WebUI.Filters
@@ -25,8 +24,6 @@ namespace BuildHealth2013.WebUI.Filters
         {
             public SimpleMembershipInitializer()
             {
-                Database.SetInitializer<BuildHealthContext>(null);
-
                 try
                 {
                     using (var context = new BuildHealthContext())

@@ -2,7 +2,7 @@
 
 namespace BuildHealth2013.WebUI.App_Start
 {
-    public static class WebApiConfig
+    public class WebApiConfig
     {
         public static void Register(HttpConfiguration config)
         {

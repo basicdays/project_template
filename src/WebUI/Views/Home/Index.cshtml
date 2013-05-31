@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<BuildHealth2013.WebUI.Models.UserProfile>
+@{
     ViewBag.Title = "Home Page";
 }
 @section featured {
@@ -42,4 +43,13 @@
         and price for your applications.
         <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
     </li>
+</ol>
+<h3>There are @Model.Count() registered users.</h3>
+<ol>
+    @foreach (var user in Model)
+    {
+        <li>
+            <label>Name: </label>@user.UserName
+        </li>
+    }
 </ol>

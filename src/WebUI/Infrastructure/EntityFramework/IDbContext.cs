@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 
-namespace BuildHealth2013.WebUI.Infrastructure.DataAccess
+namespace BuildHealth2013.WebUI.Infrastructure.EntityFramework
 {
     public interface IDbContext
     {

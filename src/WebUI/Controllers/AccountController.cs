@@ -5,7 +5,7 @@ using System.Transactions;
 using System.Web.Mvc;
 using System.Web.Security;
 using BuildHealth2013.WebUI.Filters;
-using BuildHealth2013.WebUI.Infrastructure.DataAccess;
+using BuildHealth2013.WebUI.Infrastructure.EntityFramework;
 using BuildHealth2013.WebUI.Models;
 using BuildHealth2013.WebUI.ViewModels;
 using DotNetOpenAuth.AspNet;

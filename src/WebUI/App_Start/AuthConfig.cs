@@ -1,6 +1,6 @@
 ﻿namespace BuildHealth2013.WebUI.App_Start
 {
-    public static class AuthConfig
+    public class AuthConfig
     {
         public static void RegisterAuth()
         {
